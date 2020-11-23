@@ -1,19 +1,29 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'; 
+import './Homepage.css'
 
 class Homepage extends Component {
     render(){
 
 
         return (
-            <div>
-                <h1>BrewCation</h1>
-                <Link to='/brewlist'>
-                    Brew List
-                </Link>
-                {/* <Link to='contact-list'>
-                    Contact List
-                </Link> */}
+            <div className="body">
+                <h1><i>Brew</i> Cation</h1>
+                  
+                    <div className="homepageNav">
+                        <nav className="homepageNavBar">
+                            <Link to='/brewlist' className="homepageLink">
+                                BREW LIST
+                            </Link>
+                            <Link to='contact-list' className="homepageLink">
+                                CONTACT LIST
+                            </Link>
+                        </nav>
+                    </div>
+
+                <footer className="footer">
+                    <p>&copy; 2020 BrewCation | Austin & Zac Benckendorf GA students &middot;</p>
+                </footer>
                 
             </div>
 

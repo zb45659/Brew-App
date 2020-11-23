@@ -20,12 +20,8 @@ class BrewList extends Component {
             )
         })
           return(
- frontend
+ 
               <div className='breweries'>
-                  <h1> test </h1>
-              <div>
-                  <h1> test </h1>
- master
                   <h1>Breweries</h1>
                   {breweries}
               </div>
