@@ -2,28 +2,33 @@ import React, {Component} from "react"
 
 
 class Brewery extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
 
-        this.state={
-            name: props.name
-        }
     }
     render() {
-        console.log(this.props)
+        console.log(this.props.breweries) // pulling empty object
 
-        return(
-            <div className='brewery'>
-                
-                <h3> {this.props.name}</h3>
-                <h4> {this.props.brewery_type}</h4>
-                <h4> {this.props.city}</h4>
-                <h4> {this.props.state}</h4>
-        
-            </div>
-        )
+        let breweries = this.props.breweries.map((brewery,index) => {
+            return (
+                <div className='row' key={index}>
+                    <p>{brewery.name}</p>
+                <div>
+                Address: {brewery.street}, {brewery.city}, {brewery.state}
+                </div>
+
+
+                </div>       
+            )
+            })
+
+            return (
+                <div className='table'>
+                    <h1> Breweries </h1>
+                    {breweries}
+                </div>
+            )
     }
-
 }
 
 export default Brewery

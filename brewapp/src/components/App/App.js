@@ -1,39 +1,72 @@
 import React, { Component } from 'react';
 import Homepage from '../Homepage/Homepage'
 import BrewList from '../BrewList/BrewList'
-import {Route} from "react-router";
-import axios from 'axios'
+import {Route, Switch} from "react-router";
+import Brewery from '../Brewery/Brewery';
+
+const options = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District_of_Columbia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New_Hampshire','New_Jersey','New_Mexico','New_York','North_Carolina','North_Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode_Island','South_Carolina','South_Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West_Virginia','Wisconsin','Wyoming']
+
 
 class App extends Component {
-  constructor() {
-    super()
-
-    this.state= {
-      breweries: []
-    }
-  }
-  
-  componentDidMount = async () => {
-    let response = await axios.get('https://api.openbrewerydb.org/breweries', {
-      headers: {
-        Accept: 'application/json'
-      }
-    })
-
     
-    this.setState({
-      breweries: response.data
+    constructor() {
+        super()
+        
+    this.token = null; 
+    this.state = {
+        query: "",
+        breweries: []
+    };
+}
+        
+    onChange = event => {
+      const { value } = "New_York";
+      this.setState({
+        query: value
+      });
+  
+      this.search(value);
+    };
+  
+    search = query => {
+      const url = `https://api.openbrewerydb.org/breweries?by_state=New_York`;
+      const token = {};
+      this.token = token; 
+      
+  
+      fetch(url)
+        .then(results => results.json())
+        .then(data => {
+            if (this.token === token) {
+                this.setState({ breweries: data });
+        };
+    
     })
-  }
+}
+    
+  
+    componentDidMount = () => {
+      this.search("");
+    }
 
   render() {
+    console.log(this.state)
   return (
     <div className="App">
+      <div>
      <Route exact path='/' render={() => 
      <Homepage/>}/>
+     </div>
+     <main>
+      <Switch>
      <Route path='/brewlist' render={(props) =>
-     <BrewList {...this.state}/>}/>
-    </div>
+     <BrewList {...props} {...this.state}/>}/>
+     <Route path='/breweries' render={(props) =>
+     <Brewery {...props} {...this.state}/>}/>
+     </Switch>
+     </main>
+     </div>
+   
   );
 }
 }
