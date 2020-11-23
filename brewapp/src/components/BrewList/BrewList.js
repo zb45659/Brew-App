@@ -20,7 +20,7 @@ class BrewList extends Component {
             )
         })
           return(
-              <div>
+              <div className='breweries'>
                   <h1>Breweries</h1>
                   {breweries}
               </div>
