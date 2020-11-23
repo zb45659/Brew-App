@@ -1,0 +1,82 @@
+html {
+	height: 100%;
+	width: 100%; 
+	resize: both;
+    overflow: hidden;
+	scroll: none;
+}
+
+/* --- background image --- */
+
+.body {
+  background-image: url("https://www.redlinebrewhouse.com/wp-content/uploads/2018/02/brewery-web-header.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  width: 100vw;
+  height: 100vh;
+  overflow:auto;
+}
+
+h1 {
+    position: absolute;
+    font-size: 145px;
+    margin-top: 0px;
+    left: 20%;
+    top: 15%;
+    color: gold;
+  }
+
+  h1 i {
+    color: white;
+    font-family: 'Bad Script', cursive;
+  }
+
+  /* --- Nav Bar ---  */
+
+  .homepageNav {
+      position: absolute;
+      width: 30%; 
+      top: 55%;
+      left: 30%;
+  }
+
+  .homepageNavBar {
+    display: flex; 
+    justify-content: space-evenly;
+    background:rgba(244, 208, 63, 1);
+    height: 50px; 
+    justify-content: center;
+    opacity: 0.6;
+  }
+
+  .homepageLink {
+    display: block;
+    background:rgba(244, 208, 63, 1);
+    color: black; 
+    font-size: 20px;
+    transition: 0.2s linear;
+    width: 33%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .homepageLink:hover {
+    background-color: rgb(243, 207, 61);
+    border: lightgray solid 1px; 
+    cursor: pointer;
+  }
+
+  /* --- footer --- */
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: snow;
+    text-align: center;
+  }
