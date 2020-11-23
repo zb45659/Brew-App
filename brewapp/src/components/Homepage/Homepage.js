@@ -7,8 +7,8 @@ class Homepage extends Component {
 
         return (
             <div>
-                <h1>Homepage</h1>
-                <Link to='/'>
+                <h1>BrewCation</h1>
+                <Link to='/brewlist'>
                     Brew List
                 </Link>
                 {/* <Link to='contact-list'>
