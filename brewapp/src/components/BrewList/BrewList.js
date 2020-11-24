@@ -1,13 +1,8 @@
 import React, {Component} from "react"
-import Brewery from '../Brewery/Brewery'
-
-import {Route,Link}  from 'react-router-dom'
+import {Link}  from 'react-router-dom'
 
 class BrewList extends Component {
     
-    constructor(props) {
-        super(props)
-    }
 
     render() {
        
@@ -17,5 +12,6 @@ class BrewList extends Component {
     </div>
     )
   }
+}
 
 export default BrewList
