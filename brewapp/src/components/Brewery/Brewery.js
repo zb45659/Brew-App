@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import "./Brewery.css"
+import Button from 'react-bootstrap/Button'
 
 
 class Brewery extends Component {
@@ -14,12 +15,17 @@ class Brewery extends Component {
             return (
                 <div className='row' key={index}>
                     <p className="brew_name">{brewery.name}</p>
-                    <p className="brew_type">Style: <i>{brewery.brewery_type}</i></p>
+                    <p className="brew_type"><i>{brewery.brewery_type} Brewery</i></p>
                 <div className="brew_address">
-                    Address: {brewery.street}, {brewery.city}, {brewery.state}
+                    {brewery.street}, {brewery.city}, {brewery.state}
                 </div>
-                <div className="brew_address">
-                    <a href={"" + brewery.website_url}>{brewery.name}</a>
+                <br></br>
+                <div>
+                <a href={"" + brewery.website_url} target="_blank">
+                    <button class="homeButton"> 
+                        {brewery.name} <i className="fa fa-home"></i>
+                    </button> 
+                </a> 
                 </div>
 
                 </div>       
