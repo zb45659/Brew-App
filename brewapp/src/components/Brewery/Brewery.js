@@ -9,7 +9,6 @@ class Brewery extends Component {
 
     }
     render() {
-        console.log(this.props.breweries) // pulling empty object
 
         let breweries = this.props.breweries.map((brewery,index) => {
             return (

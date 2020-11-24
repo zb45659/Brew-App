@@ -7,7 +7,7 @@ class BrewList extends Component {
        
     return (
     <div>
-    <Link to='/breweries'> Breweries </Link>
+    <Link to='/breweries'> View Breweries </Link>
     </div>
     )
   }
