@@ -35,6 +35,7 @@ class Brewery extends Component {
                 <main className="brewery">
                     
                         <div className='table'>
+                            <h1> test test test...</h1>
                             {breweries}
                         </div>
     
