@@ -13,7 +13,7 @@ class Brewery extends Component {
         let breweries = this.props.breweries.map((brewery,index) => {
             return (
                 <div className='row' key={index}>
-                    <p>{brewery.name}</p>
+                    <p className="brew_name">{brewery.name}</p>
                     <p className="brew_type">Style: <i>{brewery.brewery_type}</i></p>
                 <div className="brew_address">
                     Address: {brewery.street}, {brewery.city}, {brewery.state}
@@ -28,9 +28,11 @@ class Brewery extends Component {
 
             return (
                 <main className="brewery">
-                    <div className='table'>
-                        {breweries}
-                    </div>
+                    
+                        <div className='table'>
+                            {breweries}
+                        </div>
+    
                 </main>
             )
     }
