@@ -5,9 +5,9 @@ import {Route,Link}  from 'react-router-dom'
 
 class BrewList extends Component {
     
-    constructor(props) {
-        super(props)
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     render() {
        
@@ -17,5 +17,6 @@ class BrewList extends Component {
     </div>
     )
   }
+}
 
 export default BrewList

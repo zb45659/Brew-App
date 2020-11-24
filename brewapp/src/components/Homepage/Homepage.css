@@ -2,8 +2,6 @@ html {
 	height: 100%;
 	width: 100%; 
 	resize: both;
-    overflow: hidden;
-	scroll: none;
 }
 
 /* --- background image --- */
