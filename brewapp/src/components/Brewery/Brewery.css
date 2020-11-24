@@ -1,0 +1,53 @@
+
+.brewery {
+    overflow:scroll;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX17824951.jpg"); 
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-attachment: scroll;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    width: 100vw;
+    height: 100vh;
+}
+
+.table {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border: black solid 1px; 
+    border-radius: 10px; 
+    opacity: 0.85;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.row {
+    color: black;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    text-align: center;
+    border-style: outset;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+}
+
+/* --- Single List Items --- */
+
+i {
+    text-transform:capitalize;
+}
+
+.brew_name {
+    font-size: 20px; 
+}

@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import "./Brewery.css"
 
 
 class Brewery extends Component {
@@ -12,21 +13,27 @@ class Brewery extends Component {
         let breweries = this.props.breweries.map((brewery,index) => {
             return (
                 <div className='row' key={index}>
-                    <p>{brewery.name}</p>
-                <div>
-                Address: {brewery.street}, {brewery.city}, {brewery.state}
+                    <p className="brew_name">{brewery.name}</p>
+                    <p className="brew_type">Style: <i>{brewery.brewery_type}</i></p>
+                <div className="brew_address">
+                    Address: {brewery.street}, {brewery.city}, {brewery.state}
                 </div>
-
+                <div className="brew_address">
+                    <a href={"" + brewery.website_url}>{brewery.name}</a>
+                </div>
 
                 </div>       
             )
             })
 
             return (
-                <div className='table'>
-                    <h1> Breweries </h1>
-                    {breweries}
-                </div>
+                <main className="brewery">
+                    
+                        <div className='table'>
+                            {breweries}
+                        </div>
+    
+                </main>
             )
     }
 }
