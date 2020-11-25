@@ -5,7 +5,8 @@ Brew App is an application designed to make the process of searching for Breweri
 # Project Links
 
 - [GitHub Repo](https://github.com/zb45659/Brew-App)
-- [Deployed Site via Heroku](STILL NEED)
+- [Deployed Site via Heroku](https://brew-app-az.herokuapp.com/)
+- [Brewery API database](https://www.openbrewerydb.org/)
 
 # Gettin Started 
 
