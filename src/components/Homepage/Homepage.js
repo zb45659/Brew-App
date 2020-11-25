@@ -12,11 +12,11 @@ class Homepage extends Component {
                   
                     <div className="homepageNav">
                         <nav className="homepageNavBar">
+                            <Link to='/info' className="homepageLink">
+                                ABOUT US
+                            </Link>
                             <Link to='/breweries' className="homepageLink">
                                 BREW LIST
-                            </Link>
-                            <Link to='contact-list' className="homepageLink">
-                                CONTACT LIST
                             </Link>
                         </nav>
                     </div>

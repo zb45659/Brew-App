@@ -47,7 +47,9 @@ class Brewery extends Component {
                         <Link to='/' className="btn">
                             <i class="fa fa-home"></i>
                         </Link>
-                        <Link to='/map' className='map'>Map!</Link>
+                        <Link to='/map' className='map'>
+                            <i class="material-icons">place</i>
+                        </Link>
                 </main>
             )
     }

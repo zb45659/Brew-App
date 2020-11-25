@@ -61,6 +61,25 @@
 .beerQuote2:hover ~ .arrows {
     visibility: visible;
 }
+
+/* --- Google Maps ---  */
+
+.map i {
+    position: absolute;
+    top: 15%; 
+    right: 5%;
+    color: red;
+    font-size: 70px; 
+}
+
+.map i:hover {
+    font-size: 75px; 
+}
+
+.table:hover ~ .map i {
+    font-size: 80px; 
+}
+
 /* --- Brewlist filters ---  */
 .brewerys {
     overflow:scroll;

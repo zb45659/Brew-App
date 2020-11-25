@@ -1,3 +1,65 @@
-.breweries {
-    background-color: lightblue;
+main {
+    overflow:scroll;
+    background-image: url("https://cdn.hipwallpaper.com/i/71/76/zQhKjC.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-attachment: scroll;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+}
+
+.info {
+    align-items: center;
+    position: absolute;
+    width: 45%;
+    height: 70%;
+    left: 3%;
+    top: 10%;
+    border: black solid 1px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.infoInside {
+    color: black; 
+    height: 70%;
+    width: 80%;
+    position: absolute; 
+    left: 10%;
+    top: 5%;
+    color: snow;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.infoInside h2 {
+    font-family: 'Cedarville Cursive', cursive;
+    text-transform: lowercase;
+    font-size: 65px; 
+}
+
+.infoInside p {
+    font-size: 28px; 
+}
+
+.btn1 {
+    position: absolute;
+    background-color: rgba(102, 102, 102, 0.9); /* Green background */
+    border: none; /* Remove borders */
+    color: black; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 20px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    opacity: 0.7;
+    left: 2%;
+    top: 2%;
+    visibility: visible;
+}
+
+.btn1:hover {
+    background-color: rgba(102, 102, 102, 1.0);
+    color: white;
+    font-size: 21px;
 }

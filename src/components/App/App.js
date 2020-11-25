@@ -51,6 +51,8 @@ class App extends Component {
      </div>
      <main>
       <Switch>
+      <Route exact path='/info' render={() =>
+      <BrewList/>}/>
       <Route exact path='/map' render={(props) =>
       <MapContainer {...props} {...this.state}/>}/>
      <div className="brewerys">
@@ -59,9 +61,16 @@ class App extends Component {
         onChange={this.handleChange}
       >
        <option value="">Choose State</option>
-       <option value="by_state=Iowa">Iowa</option>
+        <option value="by_state=Arizona">Arizona</option>
+        <option value="by_state=California">California</option>
+        <option value="by_state=Colorado">Colorado</option>
         <option value="by_state=Illinois">Illinois</option>
-        <option value="by_state=Utah">Utah</option>
+        <option value="by_state=Iowa">Iowa</option>
+        <option value="by_state=Michigan">Michigan</option>
+        <option value="by_state=Minnesota">Minnesota</option>
+        <option value="by_state=New_York">New York</option>
+        <option value="by_state=North_Carolina">North_Carolina</option>
+        <option value="by_state=Oregon">Oregon</option>
       </select>
       <select className="brewFilter"
         value={this.state.query}
@@ -71,15 +80,27 @@ class App extends Component {
        <option value="by_type=micro">Micro</option>
         <option value="by_type=brewpub">Brewpub</option>
         <option value="by_type=bar">Bar</option>
+        <option value="by_type=nano">Nano</option>
+        <option value="by_type=regional">Regional</option>
+        <option value="by_type=large">Large</option>
+        <option value="by_type=planning">Planning</option>
+        <option value="by_type=contract">Contract</option>
+        <option value="by_type=proprietor">Proprietor</option>
       </select>
       <select className="brewFilter"
         value={this.state.query}
         onChange={this.handleChange}
       >
        <option value="">Choose City</option>
-       <option value="by_city=portland">Portland, Oregon</option>
-        <option value="by_city=Asheville">Asheville, North Carolina</option>
-        <option value="by_city=bend">Bend, Oregon</option>
+       <option value="by_city=Boston">Boston</option>
+       <option value="by_city=Boulder">Boulder</option>
+       <option value="by_city=Chicago">Chicago</option>
+       <option value="by_city=Cleveland">Cleveland</option>
+       <option value="by_city=Denver">Denver</option>
+       <option value="by_city=Milwaukee">Milwaukee</option>
+       <option value="by_city=Portland">Portland</option>
+       <option value="by_city=San_Diego">San Diego</option>
+       <option value="by_city=San_Francisco">San Francisco</option>
       </select>
      <Route path='/breweries' render={(props) =>
      <Brewery {...props} {...this.state}/>}/>
