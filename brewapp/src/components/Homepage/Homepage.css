@@ -22,11 +22,11 @@ HTML {
 
 h1 {
     position: absolute;
-    font-size: 145px;
+    font-size: 165px;
     margin-top: 0px;
     left: 20%;
     top: 15%;
-    color: gold;
+    color: goldenrod;
   }
 
   h1 i {
@@ -46,7 +46,8 @@ h1 {
   .homepageNavBar {
     display: flex; 
     justify-content: space-evenly;
-    background:rgba(244, 208, 63, 1);
+    border-radius: 10px; 
+    background:goldenrod;
     height: 50px; 
     justify-content: center;
     opacity: 0.6;
@@ -54,7 +55,7 @@ h1 {
 
   .homepageLink {
     display: block;
-    background:rgba(244, 208, 63, 1);
+    background:goldenrod;
     color: black; 
     font-size: 20px;
     transition: 0.2s linear;
@@ -65,7 +66,7 @@ h1 {
   }
 
   .homepageLink:hover {
-    background-color: rgb(243, 207, 61);
+    background-color: rgb(214, 163, 34);
     border: lightgray solid 1px; 
     cursor: pointer;
   }
