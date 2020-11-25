@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Homepage from '../Homepage/Homepage'
 import BrewList from '../BrewList/BrewList'
-import {Route, Switch} from "react-router";
+import {Route, Link, Switch} from "react-router-dom";
 import Brewery from '../Brewery/Brewery';
 
 
@@ -63,10 +63,11 @@ class App extends Component {
      </div>
      <main>
       <Switch>
-     <Route path='/brewlist' render={(props) =>
-     <BrewList {...props} {...this.state}/>}/>
-     <div className="brewery">
-      <select 
+     {/* <Route path='/brewlist' render={(props) =>
+     <BrewList {...props} {...this.state}/>}/> */}
+     <div className="brewerys">
+
+      <select className="brewFilter"
         value={this.state.query} 
         onChange={this.handleChange} 
       >
@@ -75,7 +76,7 @@ class App extends Component {
         <option value="by_state=Illinois">Illinois</option>
         <option value="by_state=Utah">Utah</option>
       </select>
-      <select 
+      <select className="brewFilter"
         value={this.state.query} 
         onChange={this.handleChange} 
       >
@@ -84,7 +85,7 @@ class App extends Component {
         <option value="by_type=brewpub">Brewpub</option>
         <option value="by_type=bar">Bar</option>
       </select>
-      <select 
+      <select className="brewFilter"
         value={this.state.query} 
         onChange={this.handleChange} 
       >

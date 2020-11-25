@@ -1,7 +1,10 @@
-html {
-	height: 100%;
-	width: 100%; 
-	resize: both;
+HTML {
+  height: 100%;
+  width: 100%; 
+  resize: both;
+  overflow: hidden;
+  scroll: none;
+  overflow-x:hidden;
 }
 
 /* --- background image --- */

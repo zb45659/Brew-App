@@ -1,3 +1,4 @@
+/* --- Background image ---  */
 
 .brewery {
     overflow:scroll;
@@ -9,7 +10,121 @@
     image-rendering: pixelated;
     width: 100vw;
     height: 100vh;
+    overflow-x:hidden;
 }
+
+/* --- Beer Quote ---  */
+
+.beerQuote p {
+    color: white; 
+    font-size: 50px;
+}
+
+.beerQuote p b {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.beerQuote p i {
+    font-family: 'Cedarville Cursive', cursive;
+    text-transform: lowercase;
+}
+
+.beerQuote p small {
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px; 
+}
+
+.beerQuote2 {
+    position: absolute;
+    top: -3%; 
+    left: 80%; 
+    color: white; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.beerQuote2 p b {
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px; 
+}
+
+.arrows {
+    font-size: 25px;
+    color: goldenrod;
+    visibility: hidden;
+}
+
+.arrows .fa-arrow-right {
+    position: absolute;
+    left: 29%; 
+    top: 0.5%;
+}
+
+.arrows .fa-arrow-left {
+    position: absolute;
+    right: 30%; 
+    top: 0.5%;
+}
+
+.beerQuote:hover ~ .arrows {
+     visibility: visible; 
+}
+
+.beerQuote2:hover ~ .arrows {
+    visibility: visible; 
+}
+
+/* --- Brewlist filters ---  */
+
+.brewerys {
+    overflow:scroll;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX17824951.jpg");
+    background-attachment: scroll;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.brewFilter {
+    background-color: rgba(102, 102, 102, 0.9);
+    color: goldenrod;
+    padding: 16px;
+    margin: 5px 15px 5px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.brewFilter:hover {
+    background-color: rgba(102, 102, 102, 1.0);
+    color: black;
+    font-size: 16.2px; 
+}
+
+.btn {
+    position: absolute;
+    background-color: rgba(102, 102, 102, 0.9); /* Green background */
+    border: none; /* Remove borders */
+    color: goldenrod; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 20px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    opacity: 0.7;
+    left: 5%;
+    top: 5%;
+    visibility: visible;
+}
+
+.btn:hover {
+    background-color: rgba(102, 102, 102, 1.0);
+    color: black; 
+    font-size: 21px; 
+}
+
+/* --- Brewery Div elements ---  */
 
 .table {
     /* position: absolute; */
@@ -23,8 +138,9 @@
     margin-top: 10%;
     border: black solid 1px; 
     border-radius: 10px; 
-    opacity: 0.85;
-    background-color: rgba(244, 208, 63, 0.8);
+    opacity: 0.75;
+    background-color: goldenrod;
+    margin-top: 100px; 
 }
 
 .row {
@@ -33,11 +149,11 @@
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
-    margin: 20px;
+    margin: 20px 20px 20px 20px;
     padding: 5px;
     text-align: center;
     border-style: outset;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,1.0);
 }
 
 /* --- Single List Items --- */
@@ -49,6 +165,12 @@ i {
 .brew_name {
     font-size: 30px; 
     font-family: 'Big Shoulders Stencil Display', cursive;
-    color: orange;
+    color: darkorange;
     /* font-weight: bold; */
+}
+
+.homeButton {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 15px;
+    cursor: pointer; 
 }

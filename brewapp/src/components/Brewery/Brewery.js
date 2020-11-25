@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import "./Brewery.css"
 import Button from 'react-bootstrap/Button'
+import {Link} from 'react-router-dom'; 
 
 
 class Brewery extends Component {
@@ -33,11 +34,27 @@ class Brewery extends Component {
 
             return (
                 <main className="brewery">
+                        <div className="beerQuote">
+                            <p>
+                                "<b>LIFE</b> <i>is too</i> SHORT <small>TO DRINK</small> <b>BAD BEER</b>"
+                            </p>
+                        </div>
+                        <div className="beerQuote2">
+                            <p>
+                                DON'T WORRY... BE <b>HOPPY</b> 
+                            </p>
+                        </div>
+                        
+                        <div className="arrows">
+                            <i class='fas fa-arrow-right'></i><i class='fas fa-arrow-left'></i>
+                        </div>
                     
                         <div className='table'>
                             {breweries}
                         </div>
-    
+                        <Link to='/' className="btn">
+                            <i class="fa fa-home"></i>
+                        </Link>
                 </main>
             )
     }
