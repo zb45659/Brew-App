@@ -12,10 +12,21 @@ Brew App is an application designed to make the process of searching for Breweri
 - All planning material including how the project was mapped out can be located inside the /planning directory.
 
 # MVP - Minimum Viable Product
+It is important to keep in mind the goal of this program and these projects, they are to utilize the skills you have been taught and the skills that employers care about. You should strive to build projects that will catch an employers eye and get you hired.
+
+## Technical Requirements
+
 - This project is located insde a GitHub repo with a React app
 - React was used to leverage an API about Breweries. This database has a scope of the United States for finding breweries.
 - React Router was used to handle multiple views, including the Homepage.js, App.js, Brewery.js, and MapContainer.js.
 - This app communicates with the API and renders the UI accordingly with the information received.
+
+## Collaboration
+
+- Every team member must have roughly the same number of individual commits in the commit history for your app (dividing responsibilities between different parts of the app is fine, but every team member must have commits in the project).
+  - With our project, we split our work into two seperate flows of works, the frontend branch and the backend branch. Where we ended up with 9 commits on the frontend branc and 22 commits on the backend branch. 
+- Every team must follow a Git Workflow
+- Every team member must speak for roughly the same amount of time during the group presentation
 
 # Technology Used
 
