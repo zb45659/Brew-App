@@ -1,15 +1,12 @@
 import React, {Component} from "react"
 import "./Brewery.css"
 import Button from 'react-bootstrap/Button'
-
-
+import {Link} from 'react-router-dom';
 class Brewery extends Component {
     constructor(props) {
         super(props)
-
     }
     render() {
-
         let breweries = this.props.breweries.map((brewery,index) => {
             return (
                 <div className='row' key={index}>
@@ -21,27 +18,38 @@ class Brewery extends Component {
                 <br></br>
                 <div>
                 <a href={"" + brewery.website_url} target="_blank">
-                    <button class="homeButton"> 
+                    <button class="homeButton">
                         {brewery.name} <i className="fa fa-home"></i>
-                    </button> 
-                </a> 
+                    </button>
+                </a>
                 </div>
-
-                </div>       
+                </div>
             )
             })
-
             return (
                 <main className="brewery">
-                    
+                        <div className="beerQuote">
+                            <p>
+                                "<b>LIFE</b> <i>is too</i> SHORT <small>TO DRINK</small> <b>BAD BEER</b>"
+                            </p>
+                        </div>
+                        <div className="beerQuote2">
+                            <p>
+                                DON'T WORRY... BE <b>HOPPY</b>
+                            </p>
+                        </div>
+                        <div className="arrows">
+                            <i class='fas fa-arrow-right'></i><i class='fas fa-arrow-left'></i>
+                        </div>
                         <div className='table'>
-                            <h1> test test test...</h1>
                             {breweries}
                         </div>
-    
+                        <Link to='/' className="btn">
+                            <i class="fa fa-home"></i>
+                        </Link>
+                        <Link to='/map' className='map'>Map!</Link>
                 </main>
             )
     }
 }
-
 export default Brewery

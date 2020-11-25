@@ -1,13 +1,14 @@
-html {
-	height: 100%;
-	width: 100%; 
-	resize: both;
+HTML {
+  height: 100%;
+  width: 100%;
+  resize: both;
+  overflow: hidden;
+  scroll: none;
+  overflow-x:hidden;
 }
-
 /* --- background image --- */
-
 .body {
-  background-image: url("https://www.redlinebrewhouse.com/wp-content/uploads/2018/02/brewery-web-header.jpg"); 
+  background-image: url("https://www.redlinebrewhouse.com/wp-content/uploads/2018/02/brewery-web-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: crisp-edges;
@@ -16,43 +17,38 @@ html {
   height: 100vh;
   overflow:auto;
 }
-
 h1 {
     position: absolute;
-    font-size: 145px;
+    font-size: 166px;
     margin-top: 0px;
     left: 20%;
     top: 15%;
-    color: gold;
+    color: goldenrod;
   }
-
   h1 i {
     color: white;
     font-family: 'Bad Script', cursive;
   }
-
   /* --- Nav Bar ---  */
-
   .homepageNav {
       position: absolute;
-      width: 30%; 
+      width: 30%;
       top: 55%;
       left: 30%;
   }
-
   .homepageNavBar {
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
-    background:rgba(244, 208, 63, 1);
-    height: 50px; 
+    border-radius: 10px;
+    background:goldenrod;
+    height: 50px;
     justify-content: center;
     opacity: 0.6;
   }
-
   .homepageLink {
     display: block;
-    background:rgba(244, 208, 63, 1);
-    color: black; 
+    background:goldenrod;
+    color: black;
     font-size: 20px;
     transition: 0.2s linear;
     width: 33%;
@@ -60,15 +56,12 @@ h1 {
     text-align: center;
     text-decoration: none;
   }
-
   .homepageLink:hover {
-    background-color: rgb(243, 207, 61);
-    border: lightgray solid 1px; 
+    background-color: rgb(214, 163, 34);
+    border: lightgray solid 1px;
     cursor: pointer;
   }
-
   /* --- footer --- */
-
   .footer {
     position: fixed;
     left: 0;
