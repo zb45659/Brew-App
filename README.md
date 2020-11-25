@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Brew App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Brew App is an application designed to make the process of searching for Breweries much more efficient.
 
-## Available Scripts
+# Project Links
 
-In the project directory, you can run:
+- [GitHub Repo](https://github.com/zb45659/Brew-App)
+- [Deployed Site via Heroku](STILL NEED)
 
-### `npm start`
+# Gettin Started 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- All planning material including how the project was mapped out can be located inside the /planning directory.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# MVP - Minimum Viable Product
+- This project is located insde a GitHub repo with a React app
+- React was used to leverage an API about Breweries. This database has a scope of the United States for finding breweries.
+- React Router was used to handle multiple views, including the Homepage.js, App.js, Brewery.js, and MapContainer.js.
+- This app communicates with the API and renders the UI accordingly with the information received.
 
-### `npm test`
+# Technology Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Command Line:** used to interact with computer, to create and move files 
+- **Visual Studio Code:** used to build code with HTML, CSS, and JavaScript
+- **Google Chrome:** used for launching website, and researching tips and tricks 
+- **Google Chrome Dev Tools:** used to debug code when running into problems, and to help visualize where code would show up in browser
+- **Heroku:** used for deployment
+- **CodePen:** used to sample code segments, and test different sceneraios on code
+- **W3schools:** useful website that helped with styling my app
+- **Node.js:** framework that works on top of node
+- **REACT:** framework used to store backend rendring of API data
 
-### `npm run build`
+# Issues / Missed opertunities
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Use the API and incorporate dynamic pull using filters (done)
+- Incorporate another API application (done)
+- Incorporate Google maps to pinpoint markers for selected breweries (done)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
